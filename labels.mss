@@ -48,6 +48,7 @@
   [zoom=10] {
     text-size:14 + @text_adjust;
     text-character-spacing: 2;
+    text-wrap-width: 60;
   }
 }
 
@@ -268,7 +269,7 @@
       text-halo-fill: lighten(@school, 10);
     }
     [type='water'][zoom>=10] {
-      text-fill: @water * 0.6;
+      text-fill: @water_label;
       text-halo-fill: lighten(@water, 10);
     }
   }
